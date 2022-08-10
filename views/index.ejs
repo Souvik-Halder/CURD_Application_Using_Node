@@ -16,15 +16,18 @@
                     </tr>
                 </thead>
                 <tbody>
+                 
+                  <% users.forEach((row,index)=>{ %> 
                     <tr>
-                        <td>1</td>
-                        <td><img src="" alt=""></td>
-                        <td>Souvik Halder</td>
-                        <td>souvikhaldea@gmail.com</td>
-                        <td>6296251770</td>
-                        <td><a href="" class="text-success"><i class="fa-solid fa-pen"></i></a>
-                            <a href="" class="text-danger "><i class="fa-solid fa-trash-can mx-3"></i></a></td>
+                        <td><%= index %> </td>
+                        <td><img src="<%= row.image %>" width="1000px"></td>
+                        <td><%= row.name %> </td>
+                        <td><%= row.email %> </td>
+                        <td><%= row.phone %> </td>
+                        <td><a href="/edit/<%  row._id  %> " class="text-success"><i class="fa-solid fa-pen"></i></a>
+                            <a href="/delete/<% row._id  %> " class="text-danger "><i class="fa-solid fa-trash-can mx-3"></i></a></td>
                     </tr>
+                  <% }) %> 
                 </tbody>
                </table>
            </div>
