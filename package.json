@@ -1,0 +1,20 @@
+{
+  "name": "curd_application_using_node",
+  "version": "1.0.0",
+  "description": "This website will be used as a referal in the future and this app developed by  Node Js and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Souvik-Halder/CURD_Application_Using_Node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Souvik-Halder/CURD_Application_Using_Node/issues"
+  },
+  "homepage": "https://github.com/Souvik-Halder/CURD_Application_Using_Node#readme"
+}
