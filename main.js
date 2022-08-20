@@ -8,6 +8,8 @@ const session=require('express-session');
 
 const PORT=process.env.PORT;
 
+app.use(express.static('uploads'))
+
 //database connection
 mongoose.connect(process.env.DB_URI,{useNewUrlParser:true})
 .then(()=>{
