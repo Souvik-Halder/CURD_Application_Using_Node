@@ -26,6 +26,7 @@ var upload = multer({
 
 router.post('/add',upload,(req,res)=>{
     const {name,email,phone}=req.body;
+    console.log(req.body);
      const user =new User({
           name,
           email,
